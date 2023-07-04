@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Tirtoadi</title>
+
+    <!-- font Awesome CDN link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- JQuery CDN link -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navigation start -->
+    <nav>
+      <a href="index.html"><img src="img/tirtoadi.png" class="logo" alt="" /></a>
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fas fa-times"></i>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">Profil Kalurahan</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <div class="dropdown">
+			<li><a href="courses.html" class="">Courses</a>
+			  <div class="dropdown-content">
+			  <ul>
+				  <li><a href="fullstack-developer.html">Fullstack Developer</a></li>
+				  <li><a href="mobile-developer.html">Mobile Developer</a></li>
+				  <li><a href="nodejs-programming.html">Nodejs Programming</a></li>
+				  <li><a href="python-developer.html">Python Developer</a></li>
+				  <li><a href="web-development.html">Web Development</a></li>
+			  </ul>
+		  </div>
+		  </div>
+		  </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <img src="img/menu.png" id="menu-btn" alt="" />
+      </div>
+    </nav>
+    <!-- Navigation ends -->
+
+    <!-- Hero section starts from here -->
+    <section id="home">
+      <h2>Selamat Datang di Website Kelurahan Tirtoadi</h2>
+      <p>
+        salah satu dari lima desa yang ada di kecamatan Mlati, Sleman, Daerah Istimewa Yogyakarta, Indonesia.
+		Desa Tirtoadi terbagi ke dalam 15 dusun, yaitu: Janturan, Sanggrahan, Sendari, Rajeg Lor, Rajek Kidul,
+		Rajek Wetan, Rajek Ngemplak, Gombang, Kaweden, Pundong I, Pundong II, Pundong III, Pundong IV, Pundong V,
+		dan Ketingan.
+      </p>
+      <div class="btn">
+        <a href="#course" class="blue">Informasi Terkini</a>
+        <a href="#features" class="yellow">Informasi KKN UGM</a>
+      </div>
+    </section>
+    <!-- Hero section ends from here -->
+
+    <!-- Features section starts from here -->
+    <section id="features">
+		<h1>Kanal Berita</h1>
+		<p>Sajian Berita yang dikelompokkan menjadi 3 Kluster Akademik yang dirancang oleh Mahasiswa KKN UGM 2023</p>
+  
+		<a href=""
+		target="_blank" style="text-decoration: none">
+		<div class="fea-base">
+		  <div class="fea-box">
+			<i class="fas fa-regular fa-flask fa-flip" style="color: #25a3ad;"></i>
+			<h3>Kluster Saintek</h3>
+			<p>
+			  Semua berita dan informasi terkait kegiatan yang bertemakan Sains dan Teknologi di Kelurahan Tirtoadi,
+			  Kecamatan Mlati, Kabupaten Sleman, Daerah Istimewa Yogyakarta.
+			</p>
+		  </div>
+  
+		  <a href=""
+		  target="_blank" style="text-decoration: none">
+		  <div class="fea-box">
+			<i class="fa-solid fa-users fa-beat" style="color: #d3ec13;"></i>
+			<h3>Kluster Soshum</h3>
+			<p>Semua berita dan informasi terkait kegiatan yang bertemakan Sosial Humaniora di Kelurahan Tirtoadi,
+				Kecamatan Mlati, Kabupaten Sleman, Daerah Istimewa Yogyakarta.
+			</p>
+		  </div>
+  
+		  <a href=""
+		  target="_blank" style="text-decoration: none">
+		  <div class="fea-box">
+			<i class="fa-solid fa-tree fa-bounce" style="color: #039153;"></i>
+			  <h3>Kluster Agro</h3>
+			<p>
+				Semua berita dan informasi terkait kegiatan yang bertemakan Agro di Kelurahan Tirtoadi,
+				Kecamatan Mlati, Kabupaten Sleman, Daerah Istimewa Yogyakarta.
+			</p>
+		  </div>
+		</a>
+		</div>
+	  </section>
+    <!-- Features section ends from here -->
+
+    <!-- Courses section starts from here -->
+    <section id="course">
+      <h1>What's on The News Today</h1>
+      <p>Lebih banyak Anda membaca, lebih banyak hal yang Anda ketahui. Lebih banyak hal yang Anda pelajari, lebih banyak tempat yang Anda kunjungi.</p>
+
+      <div class="course-box">
+        <div class="courses">
+          <img src="img/htmlcss.jpg" alt="" />
+          <div class="details">
+            <span>Semester 1</span>
+            <h6>Pengenalan HTML dan CSS</h6>
+
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+
+              <span>(239)</span>
+            </div>
+          </div>
+          <div class="cost">Saintek</div>
+        </div>
+
+        <div class="courses">
+          <img src="img/bootstrap.jpg" alt="" />
+          <div class="details">
+            <span>Semester 2</span>
+            <h6>Pengenalan Bootstrap</h6>
+
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+
+              <span>(239)</span>
+            </div>
+          </div>
+          <div class="cost">Saintek</div>
+        </div>
+
+        <div class="courses">
+          <img src="img/project.jpg" alt="" />
+          <div class="details">
+            <span>Semester 3</span>
+            <h6>Proyek Mandiri Berbasis HTML dan Bootstrap</h6>
+
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+
+              <span>(239)</span>
+            </div>
+          </div>
+          <div class="cost">Saintek</div>
+        </div>
+
+        <div class="courses">
+          <img src="img/javascript.jpg" alt="" />
+          <div class="details">
+            <span>Semester 4</span>
+            <h6>Pengenalan JavaScript</h6>
+
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+
+              <span>(239)</span>
+            </div>
+          </div>
+          <div class="cost">Soshum</div>
+        </div>
+
+        <div class="courses">
+          <img src="img/c2.jpg" alt="" />
+          <div class="details">
+            <span>Semester 5</span>
+            <h6>Pengenalan Lanjutan JavaScript</h6>
+
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+
+              <span>(239)</span>
+            </div>
+          </div>
+          <div class="cost">Soshum</div>
+        </div>
+
+        <div class="courses">
+          <img src="img/finalproject.jpg" alt="" />
+          <div class="details">
+            <span>Semester 6</span>
+            <h6>Proyek Akhir</h6>
+
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+
+              <span>(239)</span>
+            </div>
+          </div>
+          <div class="cost">Soshum</div>
+        </div>
+        <div class="courses">
+          <img src="img/finalproject.jpg" alt="" />
+          <div class="details">
+            <span>Semester 6</span>
+            <h6>Proyek Akhir</h6>
+
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+
+              <span>(239)</span>
+            </div>
+          </div>
+          <div class="cost">Agro</div>
+        </div>
+
+        <div class="courses">
+          <img src="img/finalproject.jpg" alt="" />
+          <div class="details">
+            <span>Semester 6</span>
+            <h6>Proyek Akhir</h6>
+
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+
+              <span>(239)</span>
+            </div>
+          </div>
+          <div class="cost">Agro</div>
+        </div>
+
+        <div class="courses">
+          <img src="img/finalproject.jpg" alt="" />
+          <div class="details">
+            <span>Semester 6</span>
+            <h6>Proyek Akhir</h6>
+
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+
+              <span>(239)</span>
+            </div>
+          </div>
+          <div class="cost">Agro</div>
+        </div>
+      </div>
+    </section>
+    <!-- Courses section ends from here -->
+
+    <!-- Experts section starts from here -->
+    <section id="experts">
+      <h1>Meet the Team</h1>
+      <p>Mahasiswa Mahasiswi KKN PPM Sub Unit Tirtoadi Universitas Gadjah Mada Tahun 2023</p>
+      <div class="expert-box">
+        <!-- <div class="profile">
+          <img src="img/nobody1.png" alt="" />
+          <h6>Vivi Listyaningrum</h6>
+          <p>Dukuh Dusun Sanggrahan</p>
+          <div class="pro-links">
+            <a href="https://wa.me/6281511431401" target="_blank"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+            <a
+              href="https://instagram.com/masdullah"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <i class="fab fa-google"></i>
+          </div>
+        </div> -->
+
+        <!-- <div class="profile">
+          <img src="img/nobody1.png" alt="" />
+          <h6>Ridwan</h6>
+          <p>
+            Pak Lurah Tirtoadi
+          </p>
+          <div class="pro-links">
+            <i class="fab fa-whatsapp"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-google"></i>
+          </div>
+        </div> -->
+
+        <div class="profile">
+          <img src="img/victor.png" alt="" />
+          <h6>Victor Ilen Segara</h6>
+          <p>Mahasiswa S1 Bahasa & Sastra Prancis UGM</p>
+          <div class="pro-links">
+            <a href="https://wa.me/6285293336192" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://instagram.com/vctrilens" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="profile">
+          <img src="img/fajar.png" alt="" />
+          <h6>M. Fithroh Fajar RSH</h6>
+          <p>Mahasiswa S1 Elektronika dan Instrumentasi UGM</p>
+          <div class="pro-links">
+            <a href="https://wa.me/6281291331899" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://instagram.com/mf_fajarramadhan_sh" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="profile">
+          <img src="img/athifah.png" alt="" />
+          <h6>Athifa Nabila S</h6>
+          <p>Mahasiswi S1 Ilmu Aktuaria UGM</p>
+          <div class="pro-links">
+            <a href="https://wa.me/628557939577" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://instagram.com/thifanss" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        
+		<div class="profile">
+          <img src="img/haris (1).png" alt="" />
+          <h6>Haris Aditya Mandala</h6>
+          <p>Mahasiswa S1 Hukum UGM</p>
+          <div class="pro-links">
+            <a href="https://wa.me/6281283808456" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://instagram.com/adityamandala23" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="profile">
+          <img src="img/yuli (2).png" alt="" />
+          <h6>Yuliana Rizka Handayani</h6>
+          <p>Mahasiswi D4 Pengelolaan Hutan</p>
+          <div class="pro-links">
+            <a href="https://wa.me/6282313768687" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://instagram.com/yulianarizka31" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="profile">
+          <img src="img/biha (2).png" alt="" />
+          <h6>Sabiha Zahratunnada</h6>
+          <p>Mahasiswi S1 Psikologi UGM</p>
+          <div class="pro-links">
+            <a href="https://wa.me/6282211246212" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://instagram.com/bihaazhrnnd" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="profile">
+          <img src="img/darline.png" alt="" />
+          <h6>Darline Lanek</h6>
+          <p>Mahasiswi S1 Ilmu Hubungan Internasional</p>
+          <div class="pro-links">
+            <a href="https://wa.me/628116688756" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://instagram.com/darlinelanek" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="profile">
+          <img src="img/syahla (2).png" alt="" />
+          <h6>Nur Syahla Ardhiyani</h6>
+          <p>Mahasiswi S1 Fakultas Biologi</p>
+          <div class="pro-links">
+            <a href="https://wa.me/6281315204256" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://instagram.com/syahlaardyn" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="profile">
+          <img src="img/salma.png" alt="" />
+          <h6>Ratu Salma Bani Ismail</h6>
+          <p>Mahasiswi S1 Bahasa & Kebudayaan Jepang UGM</p>
+          <div class="pro-links">
+            <a href="https://wa.me/6285795929443" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://instagram.com/salmab.i" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Experts section ends from here -->
+
+    <!-- Footer section starts from here -->
+    <footer>
+      <div class="footer-col">
+        <h3>Kalurahan Tirtoadi</h3>
+        <a href="pagenotfound.html" style="text-decoration: none;"><li>Tentang Kami</li></a>
+        <a href="pagenotfound.html" style="text-decoration: none;"><li>Bantuan</li></a>
+        <a href="pagenotfound.html" style="text-decoration: none;"><li>Magang</li></a>
+        <li>FAQ</li>
+      </div>
+
+      <div class="footer-col">
+        <h3>Profil Kalurahan</h3>
+        <a href="pagenotfound.html" style="text-decoration: none;"><li>Pendaftaran</li></a>
+        <a href="pagenotfound.html"><li>Pasang Iklan</li></a>
+        <a href="pagenotfound.html"><li>Kebijakan Privasi</li></a>
+        <a href="pagenotfound.html"><li>Contact Us</li></a>
+      </div>
+
+      <div class="footer-col">
+        <h3>Berita</h3>
+        <a href="pagenotfound.html" style="text-decoration: none;"><li>Blog</li></a>
+        <a href="pagenotfound.html" style="text-decoration: none;"><li>Top Products</li></a>
+        <a href="pagenotfound.html" style="text-decoration: none;"><li>All careers in Web Development</li></a>
+      </div>
+
+      <div class="footer-col">
+        <h3>Kontak</h3>
+        <a href="pagenotfound.html" style="text-decoration: none;"><li>Research</li></a>
+        <a href="pagenotfound.html" style="text-decoration: none;"><li>Experts</li></a>
+        <a href="pagenotfound.html" style="text-decoration: none;"><li>Managed Website</li></a>
+        <a href="pagenotfound.html" style="text-decoration: none;"><li>Marketing Service</li></a>
+      </div>
+
+      <div class="footer-col">
+        <h3>Newsletter</h3>
+        <p>You can trust us. we only send promo offers.</p>
+
+        <div class="subscribe">
+          <!-- <input type="email" placeholder="Your email Address" />
+          <a href="#" class="yellow">SUBSCRIBE</a> -->
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>
+          © 2023 Unit KKN UGM Teams || All rights reserved.
+          <a href="" target="_blank"></a>
+        </p>
+        <div class="pro-links">
+          <a href="https://web.facebook.com/desatirtoadi.balaidesa/" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/kalurahan_tirtoadi/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/channel/UCm0-mkFow0GsBre-gaU5ofA" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://twitter.com/combineri" target="_blank"><i class="fab fa-twitter"></i></a>
+		  <a href="https://tirtoadisid.slemankab.go.id" target="_blank"><i class="fab fa-google"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer section ends from here -->
+
+    <script>
+      const name= document.getElementById("#name")      
+      const email= document.getElementById("email")      
+      const sekolah= document.getElementById("sekolah")      
+      const nomorhp= document.getElementById("nomorhp")      
+
+      const submitbtn = document.getElementById("form-submit")
+      
+      submitbtn.addEventListener("click", function myFunction() {
+        console.log(name.value);
+      })
+
+      
+    </script>
+    <script>
+      // Show menu links on burger click
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul").addClass("active");
+      });
+
+      // Hide navbar on click function
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("active");
+      });
+    </script>
+  </body>
+</html>
